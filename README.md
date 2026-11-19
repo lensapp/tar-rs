@@ -1,3 +1,5 @@
+> **lensapp fork.** Branch `lns/0.4.46-pax` is tar 0.4.46 with one fix: `PaxExtensions` reads each PAX record by its length prefix, so a value can contain a newline (upstream #452, #476). Remove this fork when a tar release has that fix.
+
 # tar-rs
 
 [Documentation](https://docs.rs/tar)
