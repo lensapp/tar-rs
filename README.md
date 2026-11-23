@@ -2,7 +2,7 @@
 
 # tar-rs
 
-[Documentation](https://docs.rs/tar)
+[Documentation](https://docs.rs/lns-tar)
 
 A tar archive reading/writing library for Rust.
 

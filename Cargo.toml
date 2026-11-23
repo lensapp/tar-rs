@@ -1,10 +1,10 @@
 [package]
-name = "tar"
+name = "lns-tar"
 version = "0.4.46"
 authors = ["Alex Crichton <alex@alexcrichton.com>"]
-homepage = "https://github.com/composefs/tar-rs"
-repository = "https://github.com/composefs/tar-rs"
-documentation = "https://docs.rs/tar"
+homepage = "https://github.com/lensapp/tar-rs"
+repository = "https://github.com/lensapp/tar-rs"
+documentation = "https://docs.rs/lns-tar"
 license = "MIT OR Apache-2.0"
 keywords = ["tar", "tarfile", "encoding"]
 readme = "README.md"
@@ -13,11 +13,15 @@ rust-version = "1.63"
 exclude = ["tests/archives/*"]
 
 description = """
+The tar crate with the PAX length-prefix fix, until upstream tar has it.
 A Rust implementation of a TAR file reader and writer. This library does not
 currently handle compression, but it is abstract over all I/O readers and
 writers. Additionally, great lengths are taken to ensure that the entire
 contents are never required to be entirely resident in memory all at once.
 """
+
+[lib]
+name = "tar"
 
 [dependencies]
 filetime = "0.2.8"
